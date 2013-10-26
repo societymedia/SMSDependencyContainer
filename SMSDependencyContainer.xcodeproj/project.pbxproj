@@ -40,6 +40,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FADA704054E3BE8C7784EDBC /* SMSDependencyContainer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.spec; path = SMSDependencyContainer.podspec; sourceTree = SOURCE_ROOT; };
 		FADA71D1516184EF26DDA678 /* libSMSDependencyContainer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMSDependencyContainer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA71FC468133537C4BE63C /* SMSDependencyContainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSDependencyContainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA72F40C1D30B8FF488444 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -47,6 +48,8 @@
 		FADA7342F7D263C997DF2F4E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FADA7458EFDAECB00ACCBB84 /* SMSDependencyContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSDependencyContainer.h; sourceTree = "<group>"; };
 		FADA7533BE49000949FE994D /* SMSDependencyContainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMSDependencyContainer-Prefix.pch"; sourceTree = "<group>"; };
+		FADA75539B0E0CFF66EFAD74 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		FADA7600A224C4CC8271AEB4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = SOURCE_ROOT; };
 		FADA76BBD7537586E0653495 /* SMSDependencyContainerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSDependencyContainerTests.m; sourceTree = "<group>"; };
 		FADA76F9B9E809E4B6F5C9F7 /* SMSDependencyContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSDependencyContainer.m; sourceTree = "<group>"; };
 		FADA7B5AA81BC3D2CC19B815 /* SMSDependencyContainerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "SMSDependencyContainerTests-Info.plist"; sourceTree = "<group>"; };
@@ -98,6 +101,9 @@
 			children = (
 				FADA7CE57AD3457ABB6EC71A /* Supporting Files */,
 				FADA71E1037001403DFEE425 /* Classes */,
+				FADA75539B0E0CFF66EFAD74 /* LICENSE */,
+				FADA704054E3BE8C7784EDBC /* SMSDependencyContainer.podspec */,
+				FADA7600A224C4CC8271AEB4 /* README.md */,
 			);
 			path = SMSDependencyContainer;
 			sourceTree = "<group>";
