@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FADA71691C05F1097FC89A37 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADA7342F7D263C997DF2F4E /* XCTest.framework */; };
-		FADA73D8D63CBBC458F59147 /* SMSDependencyContainer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FADA7934585845304ED6F5CF /* SMSDependencyContainer.h */; };
-		FADA77B8FC6B4C59020F94FB /* SMSDependencyContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA77D3B6D2EBE27D9EF204 /* SMSDependencyContainer.m */; };
+		FADA76A5532D90A05FC06003 /* SMSDependencyContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA76F9B9E809E4B6F5C9F7 /* SMSDependencyContainer.m */; };
 		FADA77D79DE872D71C66E9A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADA730AA4784B67E7377426 /* Foundation.framework */; };
 		FADA78901CBF30707EB448E9 /* SMSDependencyContainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA76BBD7537586E0653495 /* SMSDependencyContainerTests.m */; };
 		FADA7ABCED81F81A08B9690E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FADA78DDD034C5DE1EA1A6F9 /* InfoPlist.strings */; };
@@ -35,7 +34,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				FADA73D8D63CBBC458F59147 /* SMSDependencyContainer.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,10 +45,10 @@
 		FADA72F40C1D30B8FF488444 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FADA730AA4784B67E7377426 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FADA7342F7D263C997DF2F4E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FADA7458EFDAECB00ACCBB84 /* SMSDependencyContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSDependencyContainer.h; sourceTree = "<group>"; };
 		FADA7533BE49000949FE994D /* SMSDependencyContainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMSDependencyContainer-Prefix.pch"; sourceTree = "<group>"; };
 		FADA76BBD7537586E0653495 /* SMSDependencyContainerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSDependencyContainerTests.m; sourceTree = "<group>"; };
-		FADA77D3B6D2EBE27D9EF204 /* SMSDependencyContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSDependencyContainer.m; sourceTree = "<group>"; };
-		FADA7934585845304ED6F5CF /* SMSDependencyContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSDependencyContainer.h; sourceTree = "<group>"; };
+		FADA76F9B9E809E4B6F5C9F7 /* SMSDependencyContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSDependencyContainer.m; sourceTree = "<group>"; };
 		FADA7B5AA81BC3D2CC19B815 /* SMSDependencyContainerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "SMSDependencyContainerTests-Info.plist"; sourceTree = "<group>"; };
 		FADA7DCF4774D0D3D12EE32B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -87,12 +85,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FADA71E1037001403DFEE425 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FADA7A36689813A0AE9047C6 /* iOS */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		FADA72B26A5124C98426819D /* SMSDependencyContainer */ = {
 			isa = PBXGroup;
 			children = (
 				FADA7CE57AD3457ABB6EC71A /* Supporting Files */,
-				FADA7934585845304ED6F5CF /* SMSDependencyContainer.h */,
-				FADA77D3B6D2EBE27D9EF204 /* SMSDependencyContainer.m */,
+				FADA71E1037001403DFEE425 /* Classes */,
 			);
 			path = SMSDependencyContainer;
 			sourceTree = "<group>";
@@ -114,6 +119,15 @@
 				FADA7DCF4774D0D3D12EE32B /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FADA7A36689813A0AE9047C6 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FADA76F9B9E809E4B6F5C9F7 /* SMSDependencyContainer.m */,
+				FADA7458EFDAECB00ACCBB84 /* SMSDependencyContainer.h */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		FADA7AED93EDB51F541725AE /* Products */ = {
@@ -223,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADA77B8FC6B4C59020F94FB /* SMSDependencyContainer.m in Sources */,
+				FADA76A5532D90A05FC06003 /* SMSDependencyContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
