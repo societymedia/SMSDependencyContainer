@@ -5,9 +5,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :text => "LICENSE" }
   s.author       = { "Societymedia Services" => "tony@societymedia.com" }
   s.source       = {
-    :git => "git@github.com:societymedia/SMSDependencyContainer.git",
-    :tag => "0.0.1"
+    :git => "git@github.com:societymedia/SMSDependencyContainer.git"
   }
-  s.source_files = 'Classes/*.{h,m}'
+  s.source_files = '**/*.{h,m,a}'
   s.requires_arc = true
 end
