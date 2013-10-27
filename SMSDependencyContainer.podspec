@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SMSDependencyContainer"
-  s.version      = "0.1"
+  s.version      = "0.0.1"
   s.summary      = "IOC container for Objective C applications."
   s.homepage     = "http://git.societymedia.com"
   s.license      = { :type => "MIT", :text => "LICENSE" }
