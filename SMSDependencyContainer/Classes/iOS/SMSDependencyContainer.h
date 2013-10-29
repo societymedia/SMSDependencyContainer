@@ -17,6 +17,7 @@ typedef id (^SMSDependencyContainerHandler)(void);
 
 @interface SMSDependencyContainer : NSObject
 + (instancetype)sharedInstance;
+- (id)resolve:(Protocol *)protocol forClass:(Class)class;
 - (id)resolve:(Protocol *)protocol;
 - (void)bindToProtocol:(Protocol *)protocol withClass:(Class)class inScope:(SMSDependencyContainerScope)scope;
 //- (void)initWithBindings:(NSDictionary *)bindings;

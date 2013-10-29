@@ -22,15 +22,11 @@ typedef id (^SMSInstanceHandler)(void);
     self = [super init];
     if (self)
     {
-       self.container =  [NSMutableDictionary dictionary];
+        self.container =  [NSMutableDictionary dictionary];
     }
 
     return self;
 }
-
-
-
-
 
 + (instancetype)sharedInstance
 {
@@ -42,10 +38,19 @@ typedef id (^SMSInstanceHandler)(void);
     return sharedInstance;
 }
 
+- (NSString*)formatKey:(NSString*)protocolKey classKey:(NSString*)classKey
+{
+    return [NSString stringWithFormat:@"%@.%@", protocolKey, classKey];
+}
 
+- (id)resolve:(Protocol *)protocol forClass:(Class)class
+{
+    SMSDependencyContainerHandler block = [self.container objectForKey:[self formatKey:NSStringFromProtocol(protocol) classKey:NSStringFromClass(class)]];
+    return block();
+}
 - (id)resolve:(Protocol *)protocol
 {
-    SMSDependencyContainerHandler block = [self.container objectForKey:NSStringFromProtocol(protocol)];
+    SMSDependencyContainerHandler block = [self.container objectForKey:[self formatKey:NSStringFromProtocol(protocol) classKey:NSStringFromClass([NSObject class])]];
     return block();
 }
 
@@ -66,7 +71,7 @@ typedef id (^SMSInstanceHandler)(void);
             }
 
             return [[class alloc]init];
-        } forKey:NSStringFromProtocol(protocol)];
+        } forKey:[self formatKey:NSStringFromProtocol(protocol) classKey:NSStringFromClass(class)]];
     }
 }
 
