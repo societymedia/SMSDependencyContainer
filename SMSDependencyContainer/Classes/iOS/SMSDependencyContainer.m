@@ -50,7 +50,7 @@ typedef id (^SMSInstanceHandler)(void);
 }
 - (id)resolve:(Protocol *)protocol
 {
-    SMSDependencyContainerHandler block = [self.container objectForKey:[self formatKey:NSStringFromProtocol(protocol) classKey:NSStringFromClass([NSObject class])]];
+    SMSDependencyContainerHandler block = [self.container objectForKey:[self formatKey:NSStringFromProtocol(protocol) classKey:NSStringFromProtocol(protocol)]];
     return block();
 }
 
